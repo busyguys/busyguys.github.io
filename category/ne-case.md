@@ -1,6 +1,7 @@
 ---
 layout: category
-title: Edge Case
+title: Network Engineer
+category: networking
 ---
 
 Sample category page. You need to create a page for each category.
