@@ -1,5 +1,6 @@
 ---
 layout: default
+comments: true
 ---
 
 <header>
@@ -15,4 +16,7 @@ layout: default
 
   {% include comments.html %}
   {% include related_posts.html %}
+  {% if page.comments != false %}
+  {% include disqus_comments.html %}
+{% endif %}  
 </div>
