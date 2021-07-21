@@ -15,10 +15,11 @@ tags:
 VXLAN 개념 공부 할 겸 RFC 번역해보기  
 [RFC 7348](https://datatracker.ietf.org/doc/rfc7348/?include_text=1)
 
-2. 생략
+2. 생략  
+    
+3. VXLAN Problem Statements  
+ - Limitation STP & VLAN Ranges  
 
-3. VXLAN Problem Statements
- - Limitation STP & VLAN Ranges
 ```
   3.  VXLAN Problem Statement
 
@@ -64,7 +65,8 @@ STP를 이용해, 루프를 방지하지만 사실, STP 때문에 네트워크 �
 > VLAN은, 12bit VLAN ID를 이용해, 브로드케스트 도메인을 나누는 기술이다. 알겠지만, 4094 개의 Limitation을 가지고 있다. 관련해선 3.3 섹션에서 자세히 다루도록 하겠다.
   
 
-- Multi-Tenant Environments
+- Multi-Tenant Environments  
+  
 ```
 3.2.  Multi-tenant Environments
 
