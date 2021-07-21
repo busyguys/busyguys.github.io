@@ -26,10 +26,10 @@ VXLAN 개념 공부 할 겸 RFC 번역해보기
    the deployed VXLAN protocol for the benefit of the Internet
    community.
 ```
-```
-해당 문서는 Virtual eXtensible Local Area Network (VXLAN) 에 대한 문서로, 가상화된 데이터센터의 multiple 테넌트 수용의 니즈를 해결하기 위한 주소 체계다. Cloud service 제공자와, enterprise 데이터센터에서 사용 될 프로토콜이며, VXLAN protocol 도입의 장점을 서술한 문서다.
-```
+> 해당 문서는 Virtual eXtensible Local Area Network (VXLAN) 에 대한 문서로, 가상화된 데이터센터의 multiple 테넌트 수용의 니즈를 해결하기 위한 주소 체계다.   
+Cloud service 제공자와, enterprise 데이터센터에서 사용 될 프로토콜이며, VXLAN protocol 도입의 장점을 서술한 문서다.
 
+  
 2. Introduction
 ```
    Server virtualization has placed increased demands on the physical
@@ -77,19 +77,16 @@ VXLAN 개념 공부 할 겸 RFC 번역해보기
    documents the deployed VXLAN protocol for the benefit of the Internet
    community.
 ```
-```
-서버의 가상화로 인해, 물리적인 네트워크 인프라의 확장이 불가피해졌다.
--> 가상화도 하나의 자원이므로, 인프라의 확장이 꼭 필요해짐을 의미하는 듯
-하나의 물리서버는, 각각의 MAC을 가진 VM 들을 가질 수 있게 되었다. 이는, 훨씬 많은 MAC을 학습할 수 있는 MAC 테이블이 필요하게 되었다는 뜻이다.
+> 서버의 가상화로 인해, 물리적인 네트워크 인프라의 확장이 불가피해졌다. (가상화도 하나의 자원이므로, 인프라의 확장이 꼭 필요해짐을 의미하는 듯) 하나의 물리서버는, 각각의 MAC을 가진 VM 들을 가질 수 있게 되었다. 이는, 훨씬 많은 MAC을 학습할 수 있는 MAC 테이블이 필요하게 되었다는 뜻이다.
 
-VM들은 VLAN 내에서 그룹화 된다. 즉 하나의 VLAN은 많은 VM 들이 속해있을 수 있는데, 아시다시피, VLAN은 4094 개의 물리적 갯수 제한이 있다.
+> VM들은 VLAN 내에서 그룹화 된다. 즉 하나의 VLAN은 많은 VM 들이 속해있을 수 있는데, 아시다시피, VLAN은 4094 개의 물리적 갯수 제한이 있다.
 
-데이터센터는 이제, 여러 tenant들의 수용이 불가피해졌다.
+> 데이터센터는 이제, 여러 tenant들의 수용이 불가피해졌다.
 -> tenant는 VM들의 네트워크 단위로 이해함
 물리적인 4094개의 제한된 L2 네트워크는, 결국 한계에 달하게 될 것이다. 즉, 물리적인 Layer2 네트워크를, 물리 환경을 넘은 확장된 Layer2 네트워크로 만드는 것이 중요해졌다는 뜻이다.
 
-이 Document 는 Overlay network 에 대한 시나리오를 설명할 것이다. Overlay, VM들의 MAC Address를 논리적인 "Tunnel"을 만들어 통신이 가능하게 할, VXLAN(Virtual eXtensible Local Area Network) 에 대해 알아보자.
-```
+> 이 Document 는 Overlay network 에 대한 시나리오를 설명할 것이다. Overlay, VM들의 MAC Address를 논리적인 "Tunnel"을 만들어 통신이 가능하게 할, VXLAN(Virtual eXtensible Local Area Network) 에 대해 알아보자.
+
 
 3. 목차
 ```
@@ -134,5 +131,4 @@ RFC 7348                          VXLAN                      August 2014
 
    VXLAN Gateway
             an entity that forwards traffic between VXLANs
-
 ```
